@@ -1,4 +1,3 @@
-// Dishes Data
 const dishData = [
     { name: "Italian pasta", price: 9.55 },
     { name: "Rice with veggies", price: 8.65 },
@@ -6,10 +5,8 @@ const dishData = [
     { name: "Vegetarian Pizza", price: 6.45 },
 ];
 
-// Tax Value
 const tax = 1.20;
 
-// Task 1: Implement getPrices()
 function getPrices(taxBoolean) {
     for (let dish of dishData) {
         let finalPrice;
@@ -25,9 +22,7 @@ function getPrices(taxBoolean) {
     }
 }
 
-// Task 2: Implement getDiscount()
 function getDiscount(taxBoolean, guests) {
-    // Call getPrices() as the first operation
     getPrices(taxBoolean);
 
     if (typeof guests === "number" && guests > 0 && guests < 30) {
@@ -43,7 +38,6 @@ function getDiscount(taxBoolean, guests) {
     }
 }
 
-// Call getDiscount() with sample arguments
 getDiscount(true, 4);
 getDiscount(false, 15);
 getDiscount("yes", 10);
