@@ -1,0 +1,16 @@
+{
+  "name": "d",
+  "version": "1.0.0",
+  "description": "",
+  "main": "timesTwo.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
+}
