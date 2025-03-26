@@ -1,0 +1,17 @@
+/* You can keep these custom styles but consider using Bootstrap utilities instead */
+#photo {
+    border: 2px solid blue;
+}
+
+h1 {
+    color: blue;
+}
+
+h2 {
+    color: gray;
+}
+
+/* This can be replaced with Bootstrap margin utilities */
+div {
+    margin: 4px;
+}
