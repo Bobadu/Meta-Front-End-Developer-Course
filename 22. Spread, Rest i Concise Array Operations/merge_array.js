@@ -1,7 +1,5 @@
-const topSixRestaurants = ["Chick-fil-A", "In-N-Out", "Chipotle", "McDonald's", "Taco Bell", "KFC"];
-const [first, second, third, ...remaining] = topSixRestaurants;
+const favoriteBaseballTeams = ["Yankees", "Mets", "Dodgers", "Giants", "Red Sox", "Cubs"];
+const favoriteFootballTeams = ["Patriots", "Giants", "Jets", "Eagles", "Steelers", "Cowboys"];
 
-console.log(`First restaurant: ${first}`);
-console.log(`Second restaurant: ${second}`);
-console.log(`Third restaurant: ${third}`);
-console.log(`Remaining restaurants: ${remaining}`);
+const favoriteTeams = [...favoriteBaseballTeams, ...favoriteFootballTeams];
+console.log("Favorite Teams:", favoriteTeams);
