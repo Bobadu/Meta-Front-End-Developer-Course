@@ -1,0 +1,54 @@
+/* General Styles for the whole page */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Section: Apply these styles to the header section */
+.header {
+    background-color: #f4f4f4;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Navigation Section: Apply these styles to the navigation menu */
+.nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    background-color: #333;
+    margin: 0;
+}
+
+.nav ul li {
+    margin: 0 15px;
+}
+
+.nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Main Content Section: General styles for the content */
+.content {
+    padding: 20px;
+}
+
+/* Individual Sections: Style each section of content */
+.content > div {
+    margin-bottom: 20px;
+}
+
+/* Article Block: Style individual article blocks */
+.article {
+    margin-bottom: 10px;
+}
+
+/* Footer Section: Apply these styles to the footer */
+.footer {
+    background-color: #f4f4f4;
+    text-align: center;
+    padding: 10px;
+}
