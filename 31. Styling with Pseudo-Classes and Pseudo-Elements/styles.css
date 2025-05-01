@@ -1,0 +1,17 @@
+/* Task 1: Write hover effect styling here */
+/* Example: Change the background color of a paragraph when hovered */
+p:hover {
+    background-color: lightgray;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+    color: #333;
+}
+
+/* Task 2: Write first-line styling here */
+/* Example: Change font size and weight for the first line of each paragraph */
+p::first-line {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #0066cc;
+    letter-spacing: 0.5px;
+}
