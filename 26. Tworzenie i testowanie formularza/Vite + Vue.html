@@ -1,0 +1,731 @@
+<!DOCTYPE html>
+<!-- saved from url=(0022)http://localhost:5173/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <script type="module" src="./Vite + Vue_files/client"></script>
+
+    
+    <link rel="icon" type="image/svg+xml" href="http://localhost:5173/vite.svg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vite + Vue</title>
+  <style type="text/css" data-vite-dev-id="C:/Users/kacpe/WebstormProjects/Faktury_DS/frontend/src/Home.vue?vue&amp;type=style&amp;index=0&amp;lang.css">
+/* You'll need to add these custom colors to your Tailwind config */
+:root {
+  --color-navy-700: #1e3a8a;
+  --color-navy-800: #172554;
+  --color-pink-300: #f9a8d4;
+  --color-pink-500: #ec4899;
+  --color-pink-600: #db2777;
+}
+.bg-navy-700 {
+  background-color: var(--color-navy-700);
+}
+.bg-navy-800 {
+  background-color: var(--color-navy-800);
+}
+.hover\:bg-navy-800:hover {
+  background-color: var(--color-navy-800);
+}
+.text-navy-700 {
+  color: var(--color-navy-700);
+}
+.text-navy-800 {
+  color: var(--color-navy-800);
+}
+.hover\:text-pink-300:hover {
+  color: var(--color-pink-300);
+}
+.border-pink-500 {
+  border-color: var(--color-pink-500);
+}
+.bg-pink-500 {
+  background-color: var(--color-pink-500);
+}
+.hover\:bg-pink-600:hover {
+  background-color: var(--color-pink-600);
+}
+</style><style type="text/css" data-vite-dev-id="C:/Users/kacpe/WebstormProjects/Faktury_DS/frontend/src/style.css">/*! tailwindcss v4.0.15 | MIT License | https://tailwindcss.com */
+@layer theme, base, components, utilities;
+@layer theme {
+  :root, :host {
+    --font-sans: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji",
+      "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
+      "Courier New", monospace;
+    --color-red-500: oklch(0.637 0.237 25.331);
+    --color-red-700: oklch(0.505 0.213 27.518);
+    --color-pink-300: oklch(0.823 0.12 346.018);
+    --color-pink-500: oklch(0.656 0.241 354.308);
+    --color-pink-600: oklch(0.592 0.249 0.584);
+    --color-gray-50: oklch(0.985 0.002 247.839);
+    --color-gray-200: oklch(0.928 0.006 264.531);
+    --color-gray-300: oklch(0.872 0.01 258.338);
+    --color-gray-500: oklch(0.551 0.027 264.364);
+    --color-gray-600: oklch(0.446 0.03 256.802);
+    --color-gray-700: oklch(0.373 0.034 259.733);
+    --color-white: #fff;
+    --spacing: 0.25rem;
+    --container-md: 28rem;
+    --container-4xl: 56rem;
+    --text-sm: 0.875rem;
+    --text-sm--line-height: calc(1.25 / 0.875);
+    --text-lg: 1.125rem;
+    --text-lg--line-height: calc(1.75 / 1.125);
+    --text-xl: 1.25rem;
+    --text-xl--line-height: calc(1.75 / 1.25);
+    --text-2xl: 1.5rem;
+    --text-2xl--line-height: calc(2 / 1.5);
+    --text-3xl: 1.875rem;
+    --text-3xl--line-height: calc(2.25 / 1.875);
+    --font-weight-medium: 500;
+    --font-weight-bold: 700;
+    --radius-md: 0.375rem;
+    --radius-lg: 0.5rem;
+    --default-transition-duration: 150ms;
+    --default-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    --default-font-family: var(--font-sans);
+    --default-mono-font-family: var(--font-mono);
+  }
+}
+@layer base {
+  *, ::after, ::before, ::backdrop, ::file-selector-button {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0 solid;
+  }
+  html, :host {
+    line-height: 1.5;
+    -webkit-text-size-adjust: 100%;
+    tab-size: 4;
+    font-family: var(--default-font-family, ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji");
+    font-feature-settings: var(--default-font-feature-settings, normal);
+    font-variation-settings: var(--default-font-variation-settings, normal);
+    -webkit-tap-highlight-color: transparent;
+  }
+  hr {
+    height: 0;
+    color: inherit;
+    border-top-width: 1px;
+  }
+  abbr:where([title]) {
+    -webkit-text-decoration: underline dotted;
+    text-decoration: underline dotted;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    font-size: inherit;
+    font-weight: inherit;
+  }
+  a {
+    color: inherit;
+    -webkit-text-decoration: inherit;
+    text-decoration: inherit;
+  }
+  b, strong {
+    font-weight: bolder;
+  }
+  code, kbd, samp, pre {
+    font-family: var(--default-mono-font-family, ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace);
+    font-feature-settings: var(--default-mono-font-feature-settings, normal);
+    font-variation-settings: var(--default-mono-font-variation-settings, normal);
+    font-size: 1em;
+  }
+  small {
+    font-size: 80%;
+  }
+  sub, sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+  }
+  sub {
+    bottom: -0.25em;
+  }
+  sup {
+    top: -0.5em;
+  }
+  table {
+    text-indent: 0;
+    border-color: inherit;
+    border-collapse: collapse;
+  }
+  :-moz-focusring {
+    outline: auto;
+  }
+  progress {
+    vertical-align: baseline;
+  }
+  summary {
+    display: list-item;
+  }
+  ol, ul, menu {
+    list-style: none;
+  }
+  img, svg, video, canvas, audio, iframe, embed, object {
+    display: block;
+    vertical-align: middle;
+  }
+  img, video {
+    max-width: 100%;
+    height: auto;
+  }
+  button, input, select, optgroup, textarea, ::file-selector-button {
+    font: inherit;
+    font-feature-settings: inherit;
+    font-variation-settings: inherit;
+    letter-spacing: inherit;
+    color: inherit;
+    border-radius: 0;
+    background-color: transparent;
+    opacity: 1;
+  }
+  :where(select:is([multiple], [size])) optgroup {
+    font-weight: bolder;
+  }
+  :where(select:is([multiple], [size])) optgroup option {
+    padding-inline-start: 20px;
+  }
+  ::file-selector-button {
+    margin-inline-end: 4px;
+  }
+  ::placeholder {
+    opacity: 1;
+  }
+  @supports (not (-webkit-appearance: -apple-pay-button))  or (contain-intrinsic-size: 1px) {
+    ::placeholder {
+      color: color-mix(in oklab, currentColor 50%, transparent);
+    }
+  }
+  textarea {
+    resize: vertical;
+  }
+  ::-webkit-search-decoration {
+    -webkit-appearance: none;
+  }
+  ::-webkit-date-and-time-value {
+    min-height: 1lh;
+    text-align: inherit;
+  }
+  ::-webkit-datetime-edit {
+    display: inline-flex;
+  }
+  ::-webkit-datetime-edit-fields-wrapper {
+    padding: 0;
+  }
+  ::-webkit-datetime-edit, ::-webkit-datetime-edit-year-field, ::-webkit-datetime-edit-month-field, ::-webkit-datetime-edit-day-field, ::-webkit-datetime-edit-hour-field, ::-webkit-datetime-edit-minute-field, ::-webkit-datetime-edit-second-field, ::-webkit-datetime-edit-millisecond-field, ::-webkit-datetime-edit-meridiem-field {
+    padding-block: 0;
+  }
+  :-moz-ui-invalid {
+    box-shadow: none;
+  }
+  button, input:where([type="button"], [type="reset"], [type="submit"]), ::file-selector-button {
+    appearance: button;
+  }
+  ::-webkit-inner-spin-button, ::-webkit-outer-spin-button {
+    height: auto;
+  }
+  [hidden]:where(:not([hidden="until-found"])) {
+    display: none !important;
+  }
+}
+@layer utilities {
+  .fixed {
+    position: fixed;
+  }
+  .inset-0 {
+    inset: calc(var(--spacing) * 0);
+  }
+  .z-50 {
+    z-index: 50;
+  }
+  .container {
+    width: 100%;
+    @media (width >= 40rem) {
+      max-width: 40rem;
+    }
+    @media (width >= 48rem) {
+      max-width: 48rem;
+    }
+    @media (width >= 64rem) {
+      max-width: 64rem;
+    }
+    @media (width >= 80rem) {
+      max-width: 80rem;
+    }
+    @media (width >= 96rem) {
+      max-width: 96rem;
+    }
+  }
+  .mx-auto {
+    margin-inline: auto;
+  }
+  .my-8 {
+    margin-block: calc(var(--spacing) * 8);
+  }
+  .mt-2 {
+    margin-top: calc(var(--spacing) * 2);
+  }
+  .mt-6 {
+    margin-top: calc(var(--spacing) * 6);
+  }
+  .mb-2 {
+    margin-bottom: calc(var(--spacing) * 2);
+  }
+  .mb-4 {
+    margin-bottom: calc(var(--spacing) * 4);
+  }
+  .mb-6 {
+    margin-bottom: calc(var(--spacing) * 6);
+  }
+  .mb-8 {
+    margin-bottom: calc(var(--spacing) * 8);
+  }
+  .block {
+    display: block;
+  }
+  .flex {
+    display: flex;
+  }
+  .grid {
+    display: grid;
+  }
+  .inline-block {
+    display: inline-block;
+  }
+  .inline-flex {
+    display: inline-flex;
+  }
+  .max-h-\[90vh\] {
+    max-height: 90vh;
+  }
+  .min-h-screen {
+    min-height: 100vh;
+  }
+  .w-11\/12 {
+    width: calc(11/12 * 100%);
+  }
+  .w-full {
+    width: 100%;
+  }
+  .max-w-4xl {
+    max-width: var(--container-4xl);
+  }
+  .max-w-md {
+    max-width: var(--container-md);
+  }
+  .min-w-full {
+    min-width: 100%;
+  }
+  .grid-cols-1 {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+  .items-center {
+    align-items: center;
+  }
+  .justify-between {
+    justify-content: space-between;
+  }
+  .justify-center {
+    justify-content: center;
+  }
+  .justify-end {
+    justify-content: flex-end;
+  }
+  .gap-4 {
+    gap: calc(var(--spacing) * 4);
+  }
+  .space-y-2 {
+    :where(& > :not(:last-child)) {
+      --tw-space-y-reverse: 0;
+      margin-block-start: calc(calc(var(--spacing) * 2) * var(--tw-space-y-reverse));
+      margin-block-end: calc(calc(var(--spacing) * 2) * calc(1 - var(--tw-space-y-reverse)));
+    }
+  }
+  .space-y-4 {
+    :where(& > :not(:last-child)) {
+      --tw-space-y-reverse: 0;
+      margin-block-start: calc(calc(var(--spacing) * 4) * var(--tw-space-y-reverse));
+      margin-block-end: calc(calc(var(--spacing) * 4) * calc(1 - var(--tw-space-y-reverse)));
+    }
+  }
+  .space-y-6 {
+    :where(& > :not(:last-child)) {
+      --tw-space-y-reverse: 0;
+      margin-block-start: calc(calc(var(--spacing) * 6) * var(--tw-space-y-reverse));
+      margin-block-end: calc(calc(var(--spacing) * 6) * calc(1 - var(--tw-space-y-reverse)));
+    }
+  }
+  .space-x-2 {
+    :where(& > :not(:last-child)) {
+      --tw-space-x-reverse: 0;
+      margin-inline-start: calc(calc(var(--spacing) * 2) * var(--tw-space-x-reverse));
+      margin-inline-end: calc(calc(var(--spacing) * 2) * calc(1 - var(--tw-space-x-reverse)));
+    }
+  }
+  .space-x-3 {
+    :where(& > :not(:last-child)) {
+      --tw-space-x-reverse: 0;
+      margin-inline-start: calc(calc(var(--spacing) * 3) * var(--tw-space-x-reverse));
+      margin-inline-end: calc(calc(var(--spacing) * 3) * calc(1 - var(--tw-space-x-reverse)));
+    }
+  }
+  .space-x-4 {
+    :where(& > :not(:last-child)) {
+      --tw-space-x-reverse: 0;
+      margin-inline-start: calc(calc(var(--spacing) * 4) * var(--tw-space-x-reverse));
+      margin-inline-end: calc(calc(var(--spacing) * 4) * calc(1 - var(--tw-space-x-reverse)));
+    }
+  }
+  .divide-y {
+    :where(& > :not(:last-child)) {
+      --tw-divide-y-reverse: 0;
+      border-bottom-style: var(--tw-border-style);
+      border-top-style: var(--tw-border-style);
+      border-top-width: calc(1px * var(--tw-divide-y-reverse));
+      border-bottom-width: calc(1px * calc(1 - var(--tw-divide-y-reverse)));
+    }
+  }
+  .divide-gray-200 {
+    :where(& > :not(:last-child)) {
+      border-color: var(--color-gray-200);
+    }
+  }
+  .overflow-hidden {
+    overflow: hidden;
+  }
+  .overflow-x-auto {
+    overflow-x: auto;
+  }
+  .overflow-y-auto {
+    overflow-y: auto;
+  }
+  .rounded {
+    border-radius: 0.25rem;
+  }
+  .rounded-lg {
+    border-radius: var(--radius-lg);
+  }
+  .rounded-md {
+    border-radius: var(--radius-md);
+  }
+  .rounded-t-lg {
+    border-top-left-radius: var(--radius-lg);
+    border-top-right-radius: var(--radius-lg);
+  }
+  .border {
+    border-style: var(--tw-border-style);
+    border-width: 1px;
+  }
+  .border-b {
+    border-bottom-style: var(--tw-border-style);
+    border-bottom-width: 1px;
+  }
+  .border-b-2 {
+    border-bottom-style: var(--tw-border-style);
+    border-bottom-width: 2px;
+  }
+  .border-b-4 {
+    border-bottom-style: var(--tw-border-style);
+    border-bottom-width: 4px;
+  }
+  .border-gray-200 {
+    border-color: var(--color-gray-200);
+  }
+  .border-gray-300 {
+    border-color: var(--color-gray-300);
+  }
+  .border-pink-500 {
+    border-color: var(--color-pink-500);
+  }
+  .bg-\[\#00000090\] {
+    background-color: #00000090;
+  }
+  .bg-gray-50 {
+    background-color: var(--color-gray-50);
+  }
+  .bg-gray-600 {
+    background-color: var(--color-gray-600);
+  }
+  .bg-pink-500 {
+    background-color: var(--color-pink-500);
+  }
+  .bg-white {
+    background-color: var(--color-white);
+  }
+  .p-2 {
+    padding: calc(var(--spacing) * 2);
+  }
+  .p-3 {
+    padding: calc(var(--spacing) * 3);
+  }
+  .p-4 {
+    padding: calc(var(--spacing) * 4);
+  }
+  .p-6 {
+    padding: calc(var(--spacing) * 6);
+  }
+  .px-3 {
+    padding-inline: calc(var(--spacing) * 3);
+  }
+  .px-4 {
+    padding-inline: calc(var(--spacing) * 4);
+  }
+  .px-6 {
+    padding-inline: calc(var(--spacing) * 6);
+  }
+  .py-1\.5 {
+    padding-block: calc(var(--spacing) * 1.5);
+  }
+  .py-2 {
+    padding-block: calc(var(--spacing) * 2);
+  }
+  .py-3 {
+    padding-block: calc(var(--spacing) * 3);
+  }
+  .py-4 {
+    padding-block: calc(var(--spacing) * 4);
+  }
+  .py-8 {
+    padding-block: calc(var(--spacing) * 8);
+  }
+  .py-10 {
+    padding-block: calc(var(--spacing) * 10);
+  }
+  .py-12 {
+    padding-block: calc(var(--spacing) * 12);
+  }
+  .pt-2 {
+    padding-top: calc(var(--spacing) * 2);
+  }
+  .pb-1 {
+    padding-bottom: calc(var(--spacing) * 1);
+  }
+  .pb-2 {
+    padding-bottom: calc(var(--spacing) * 2);
+  }
+  .text-center {
+    text-align: center;
+  }
+  .text-left {
+    text-align: left;
+  }
+  .text-2xl {
+    font-size: var(--text-2xl);
+    line-height: var(--tw-leading, var(--text-2xl--line-height));
+  }
+  .text-3xl {
+    font-size: var(--text-3xl);
+    line-height: var(--tw-leading, var(--text-3xl--line-height));
+  }
+  .text-lg {
+    font-size: var(--text-lg);
+    line-height: var(--tw-leading, var(--text-lg--line-height));
+  }
+  .text-sm {
+    font-size: var(--text-sm);
+    line-height: var(--tw-leading, var(--text-sm--line-height));
+  }
+  .text-xl {
+    font-size: var(--text-xl);
+    line-height: var(--tw-leading, var(--text-xl--line-height));
+  }
+  .font-bold {
+    --tw-font-weight: var(--font-weight-bold);
+    font-weight: var(--font-weight-bold);
+  }
+  .font-medium {
+    --tw-font-weight: var(--font-weight-medium);
+    font-weight: var(--font-weight-medium);
+  }
+  .text-gray-500 {
+    color: var(--color-gray-500);
+  }
+  .text-gray-600 {
+    color: var(--color-gray-600);
+  }
+  .text-gray-700 {
+    color: var(--color-gray-700);
+  }
+  .text-red-500 {
+    color: var(--color-red-500);
+  }
+  .text-white {
+    color: var(--color-white);
+  }
+  .shadow {
+    --tw-shadow: 0 1px 3px 0 var(--tw-shadow-color, rgb(0 0 0 / 0.1)), 0 1px 2px -1px var(--tw-shadow-color, rgb(0 0 0 / 0.1));
+    box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+  }
+  .shadow-md {
+    --tw-shadow: 0 4px 6px -1px var(--tw-shadow-color, rgb(0 0 0 / 0.1)), 0 2px 4px -2px var(--tw-shadow-color, rgb(0 0 0 / 0.1));
+    box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+  }
+  .shadow-sm {
+    --tw-shadow: 0 1px 3px 0 var(--tw-shadow-color, rgb(0 0 0 / 0.1)), 0 1px 2px -1px var(--tw-shadow-color, rgb(0 0 0 / 0.1));
+    box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+  }
+  .shadow-xl {
+    --tw-shadow: 0 20px 25px -5px var(--tw-shadow-color, rgb(0 0 0 / 0.1)), 0 8px 10px -6px var(--tw-shadow-color, rgb(0 0 0 / 0.1));
+    box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+  }
+  .transition {
+    transition-property: color, background-color, border-color, outline-color, text-decoration-color, fill, stroke, --tw-gradient-from, --tw-gradient-via, --tw-gradient-to, opacity, box-shadow, transform, translate, scale, rotate, filter, -webkit-backdrop-filter, backdrop-filter;
+    transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
+    transition-duration: var(--tw-duration, var(--default-transition-duration));
+  }
+  .duration-200 {
+    --tw-duration: 200ms;
+    transition-duration: 200ms;
+  }
+  .hover\:bg-gray-50 {
+    &:hover {
+      @media (hover: hover) {
+        background-color: var(--color-gray-50);
+      }
+    }
+  }
+  .hover\:bg-gray-700 {
+    &:hover {
+      @media (hover: hover) {
+        background-color: var(--color-gray-700);
+      }
+    }
+  }
+  .hover\:bg-pink-600 {
+    &:hover {
+      @media (hover: hover) {
+        background-color: var(--color-pink-600);
+      }
+    }
+  }
+  .hover\:text-pink-300 {
+    &:hover {
+      @media (hover: hover) {
+        color: var(--color-pink-300);
+      }
+    }
+  }
+  .hover\:text-red-700 {
+    &:hover {
+      @media (hover: hover) {
+        color: var(--color-red-700);
+      }
+    }
+  }
+  .focus\:border-pink-500 {
+    &:focus {
+      border-color: var(--color-pink-500);
+    }
+  }
+  .focus\:ring-pink-500 {
+    &:focus {
+      --tw-ring-color: var(--color-pink-500);
+    }
+  }
+  .focus\:outline-none {
+    &:focus {
+      --tw-outline-style: none;
+      outline-style: none;
+    }
+  }
+  .md\:grid-cols-2 {
+    @media (width >= 48rem) {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
+  .md\:grid-cols-3 {
+    @media (width >= 48rem) {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+  }
+}
+@property --tw-space-y-reverse {
+  syntax: "*";
+  inherits: false;
+  initial-value: 0;
+}
+@property --tw-space-x-reverse {
+  syntax: "*";
+  inherits: false;
+  initial-value: 0;
+}
+@property --tw-divide-y-reverse {
+  syntax: "*";
+  inherits: false;
+  initial-value: 0;
+}
+@property --tw-border-style {
+  syntax: "*";
+  inherits: false;
+  initial-value: solid;
+}
+@property --tw-font-weight {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-shadow {
+  syntax: "*";
+  inherits: false;
+  initial-value: 0 0 #0000;
+}
+@property --tw-shadow-color {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-inset-shadow {
+  syntax: "*";
+  inherits: false;
+  initial-value: 0 0 #0000;
+}
+@property --tw-inset-shadow-color {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-ring-color {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-ring-shadow {
+  syntax: "*";
+  inherits: false;
+  initial-value: 0 0 #0000;
+}
+@property --tw-inset-ring-color {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-inset-ring-shadow {
+  syntax: "*";
+  inherits: false;
+  initial-value: 0 0 #0000;
+}
+@property --tw-ring-inset {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-ring-offset-width {
+  syntax: "<length>";
+  inherits: false;
+  initial-value: 0px;
+}
+@property --tw-ring-offset-color {
+  syntax: "*";
+  inherits: false;
+  initial-value: #fff;
+}
+@property --tw-ring-offset-shadow {
+  syntax: "*";
+  inherits: false;
+  initial-value: 0 0 #0000;
+}
+@property --tw-duration {
+  syntax: "*";
+  inherits: false;
+}
+</style></head>
+  <body>
+    <div id="app" data-v-app=""><div id="app"><div class="min-h-screen bg-gray-50"><div class="container mx-auto px-4 py-8"><h1 class="text-3xl font-bold text-navy-800 mb-8 border-b-4 border-pink-500 pb-2 inline-block"> Design Sphere - Faktury </h1><div><div class="flex justify-between mb-6"><button class="bg-pink-500 hover:bg-pink-600 text-white py-2 px-4 rounded-md shadow-md transition duration-200"> Dodaj fakturę </button><button class="bg-navy-700 hover:bg-navy-800 text-white py-2 px-4 rounded-md shadow-md transition duration-200"> Wyloguj </button></div><!-- Modal popup for invoice form --><div class="fixed inset-0 bg-[#00000090] flex justify-center items-center z-50"><div class="bg-white rounded-lg shadow-xl w-11/12 max-w-4xl max-h-[90vh] overflow-y-auto"><div class="flex justify-between items-center border-b border-gray-200 px-6 py-4 bg-navy-700 text-white rounded-t-lg"><h3 class="text-xl font-medium">Dodaj nową fakturę</h3><button class="text-2xl hover:text-pink-300 focus:outline-none transition duration-200"> × </button></div><div class="p-6"><div class="w-full"><form class="space-y-6"><!-- Podstawowe informacje o fakturze --><div class="bg-white p-6 rounded-lg shadow-md border border-gray-200"><h3 class="text-lg font-medium text-navy-800 mb-4 border-b border-pink-500 pb-2">Podstawowe informacje</h3><div class="grid grid-cols-1 md:grid-cols-3 gap-4"><div class="space-y-2"><label for="invoiceNumber" class="block text-sm font-medium text-gray-700">Faktura nr:</label><input type="text" id="invoiceNumber" placeholder="np. 001/03/2025" required="" class="w-full p-2 border border-gray-300 rounded-md shadow-sm focus:ring-pink-500 focus:border-pink-500"></div><div class="space-y-2"><label for="issueDate" class="block text-sm font-medium text-gray-700">Data wystawienia:</label><input type="date" id="issueDate" required="" class="w-full p-2 border border-gray-300 rounded-md shadow-sm focus:ring-pink-500 focus:border-pink-500"></div><div class="space-y-2"><label for="issueLocation" class="block text-sm font-medium text-gray-700">Miejsce wystawienia:</label><input type="text" id="issueLocation" placeholder="np. Warszawa" required="" class="w-full p-2 border border-gray-300 rounded-md shadow-sm focus:ring-pink-500 focus:border-pink-500"></div></div></div><!-- Dane sprzedawcy --><div class="bg-white p-6 rounded-lg shadow-md border border-gray-200"><h3 class="text-lg font-medium text-navy-800 mb-4 border-b border-pink-500 pb-2">Sprzedawca</h3><div class="space-y-4"><div class="space-y-2"><label for="sellerName" class="block text-sm font-medium text-gray-700">Nazwa/Imię i nazwisko:</label><input type="text" id="sellerName" placeholder="np. Jan Nowak" required="" class="w-full p-2 border border-gray-300 rounded-md shadow-sm focus:ring-pink-500 focus:border-pink-500"></div><div class="space-y-2"><label for="sellerAddress" class="block text-sm font-medium text-gray-700">Adres:</label><input type="text" id="sellerAddress" placeholder="np. ul. Kwiatowa 5/3" required="" class="w-full p-2 border border-gray-300 rounded-md shadow-sm focus:ring-pink-500 focus:border-pink-500"></div><div class="grid grid-cols-1 md:grid-cols-2 gap-4"><div class="space-y-2"><label for="sellerPostalCode" class="block text-sm font-medium text-gray-700">Kod pocztowy:</label><input type="text" id="sellerPostalCode" placeholder="np. 00-950" required="" class="w-full p-2 border border-gray-300 rounded-md shadow-sm focus:ring-pink-500 focus:border-pink-500"></div><div class="space-y-2"><label for="sellerCity" class="block text-sm font-medium text-gray-700">Miasto:</label><input type="text" id="sellerCity" placeholder="np. Warszawa" required="" class="w-full p-2 border border-gray-300 rounded-md shadow-sm focus:ring-pink-500 focus:border-pink-500"></div></div><div class="space-y-2"><label for="sellerNIP" class="block text-sm font-medium text-gray-700">NIP (opcjonalnie):</label><input type="text" id="sellerNIP" placeholder="np. 123-456-78-90" class="w-full p-2 border border-gray-300 rounded-md shadow-sm focus:ring-pink-500 focus:border-pink-500"></div></div></div><!-- Dane nabywcy --><div class="bg-white p-6 rounded-lg shadow-md border border-gray-200"><h3 class="text-lg font-medium text-navy-800 mb-4 border-b border-pink-500 pb-2">Nabywca</h3><div class="space-y-4"><div class="space-y-2"><label for="buyerName" class="block text-sm font-medium text-gray-700">Nazwa/Imię i nazwisko:</label><input type="text" id="buyerName" placeholder="np. Przedszkole Prywatne &quot;Słoneczko&quot;" required="" class="w-full p-2 border border-gray-300 rounded-md shadow-sm focus:ring-pink-500 focus:border-pink-500"></div><div class="space-y-2"><label for="buyerAddress" class="block text-sm font-medium text-gray-700">Adres:</label><input type="text" id="buyerAddress" placeholder="np. ul. Przykładowa 15" required="" class="w-full p-2 border border-gray-300 rounded-md shadow-sm focus:ring-pink-500 focus:border-pink-500"></div><div class="grid grid-cols-1 md:grid-cols-2 gap-4"><div class="space-y-2"><label for="buyerPostalCode" class="block text-sm font-medium text-gray-700">Kod pocztowy:</label><input type="text" id="buyerPostalCode" placeholder="np. 00-123" required="" class="w-full p-2 border border-gray-300 rounded-md shadow-sm focus:ring-pink-500 focus:border-pink-500"></div><div class="space-y-2"><label for="buyerCity" class="block text-sm font-medium text-gray-700">Miasto:</label><input type="text" id="buyerCity" placeholder="np. Warszawa" required="" class="w-full p-2 border border-gray-300 rounded-md shadow-sm focus:ring-pink-500 focus:border-pink-500"></div></div><div class="space-y-2"><label for="buyerNIP" class="block text-sm font-medium text-gray-700">NIP:</label><input type="text" id="buyerNIP" placeholder="np. 123-456-32-18" class="w-full p-2 border border-gray-300 rounded-md shadow-sm focus:ring-pink-500 focus:border-pink-500"></div></div></div><!-- Pozycje faktury --><div class="bg-white p-6 rounded-lg shadow-md border border-gray-200"><h3 class="text-lg font-medium text-navy-800 mb-4 border-b border-pink-500 pb-2">Pozycje faktury</h3><!-- Lista pozycji --><div class="mb-6 p-4 border border-gray-200 rounded-lg"><div class="flex justify-between items-center mb-2"><h4 class="font-medium">Pozycja #1</h4><button type="button" class="text-red-500 hover:text-red-700"><span class="text-lg">×</span> Usuń </button></div><div class="space-y-4"><div class="space-y-2"><label for="description-0" class="block text-sm font-medium text-gray-700">Opis usługi:</label><textarea id="description-0" placeholder="np. Wykonanie zajęć edukacyjnych z języka angielskiego dla dzieci" required="" class="w-full p-2 border border-gray-300 rounded-md shadow-sm focus:ring-pink-500 focus:border-pink-500"></textarea></div><div class="grid grid-cols-1 md:grid-cols-3 gap-4"><div class="space-y-2"><label for="quantity-0" class="block text-sm font-medium text-gray-700">Ilość:</label><input type="number" id="quantity-0" required="" class="w-full p-2 border border-gray-300 rounded-md shadow-sm focus:ring-pink-500 focus:border-pink-500"></div><div class="space-y-2"><label for="unitPrice-0" class="block text-sm font-medium text-gray-700">Cena jednostkowa (zł):</label><input type="number" id="unitPrice-0" step="0.01" required="" class="w-full p-2 border border-gray-300 rounded-md shadow-sm focus:ring-pink-500 focus:border-pink-500"></div><div class="space-y-2"><label for="netValue-0" class="block text-sm font-medium text-gray-700">Wartość netto (zł):</label><input type="number" id="netValue-0" step="0.01" readonly="" class="w-full p-2 border border-gray-300 rounded-md bg-gray-50 shadow-sm"></div></div><div class="grid grid-cols-1 md:grid-cols-3 gap-4"><div class="space-y-2"><label for="vatRate-0" class="block text-sm font-medium text-gray-700">Stawka VAT:</label><select id="vatRate-0" class="w-full p-2 border border-gray-300 rounded-md shadow-sm focus:ring-pink-500 focus:border-pink-500"><option value="0%">0% (nie podlega VAT)</option><option value="5%">5%</option><option value="8%">8%</option><option value="23%">23%</option></select></div><div class="space-y-2"><label for="vatAmount-0" class="block text-sm font-medium text-gray-700">Kwota VAT (zł):</label><input type="number" id="vatAmount-0" step="0.01" readonly="" class="w-full p-2 border border-gray-300 rounded-md bg-gray-50 shadow-sm"></div><div class="space-y-2"><label for="grossValue-0" class="block text-sm font-medium text-gray-700">Wartość brutto (zł):</label><input type="number" id="grossValue-0" step="0.01" readonly="" class="w-full p-2 border border-gray-300 rounded-md bg-gray-50 shadow-sm"></div></div></div></div><div class="mb-6 p-4 border border-gray-200 rounded-lg"><div class="flex justify-between items-center mb-2"><h4 class="font-medium">Pozycja #2</h4><button type="button" class="text-red-500 hover:text-red-700"><span class="text-lg">×</span> Usuń </button></div><div class="space-y-4"><div class="space-y-2"><label for="description-1" class="block text-sm font-medium text-gray-700">Opis usługi:</label><textarea id="description-1" placeholder="np. Wykonanie zajęć edukacyjnych z języka angielskiego dla dzieci" required="" class="w-full p-2 border border-gray-300 rounded-md shadow-sm focus:ring-pink-500 focus:border-pink-500"></textarea></div><div class="grid grid-cols-1 md:grid-cols-3 gap-4"><div class="space-y-2"><label for="quantity-1" class="block text-sm font-medium text-gray-700">Ilość:</label><input type="number" id="quantity-1" required="" class="w-full p-2 border border-gray-300 rounded-md shadow-sm focus:ring-pink-500 focus:border-pink-500"></div><div class="space-y-2"><label for="unitPrice-1" class="block text-sm font-medium text-gray-700">Cena jednostkowa (zł):</label><input type="number" id="unitPrice-1" step="0.01" required="" class="w-full p-2 border border-gray-300 rounded-md shadow-sm focus:ring-pink-500 focus:border-pink-500"></div><div class="space-y-2"><label for="netValue-1" class="block text-sm font-medium text-gray-700">Wartość netto (zł):</label><input type="number" id="netValue-1" step="0.01" readonly="" class="w-full p-2 border border-gray-300 rounded-md bg-gray-50 shadow-sm"></div></div><div class="grid grid-cols-1 md:grid-cols-3 gap-4"><div class="space-y-2"><label for="vatRate-1" class="block text-sm font-medium text-gray-700">Stawka VAT:</label><select id="vatRate-1" class="w-full p-2 border border-gray-300 rounded-md shadow-sm focus:ring-pink-500 focus:border-pink-500"><option value="0%">0% (nie podlega VAT)</option><option value="5%">5%</option><option value="8%">8%</option><option value="23%">23%</option></select></div><div class="space-y-2"><label for="vatAmount-1" class="block text-sm font-medium text-gray-700">Kwota VAT (zł):</label><input type="number" id="vatAmount-1" step="0.01" readonly="" class="w-full p-2 border border-gray-300 rounded-md bg-gray-50 shadow-sm"></div><div class="space-y-2"><label for="grossValue-1" class="block text-sm font-medium text-gray-700">Wartość brutto (zł):</label><input type="number" id="grossValue-1" step="0.01" readonly="" class="w-full p-2 border border-gray-300 rounded-md bg-gray-50 shadow-sm"></div></div></div></div><div class="mb-6 p-4 border border-gray-200 rounded-lg"><div class="flex justify-between items-center mb-2"><h4 class="font-medium">Pozycja #3</h4><button type="button" class="text-red-500 hover:text-red-700"><span class="text-lg">×</span> Usuń </button></div><div class="space-y-4"><div class="space-y-2"><label for="description-2" class="block text-sm font-medium text-gray-700">Opis usługi:</label><textarea id="description-2" placeholder="np. Wykonanie zajęć edukacyjnych z języka angielskiego dla dzieci" required="" class="w-full p-2 border border-gray-300 rounded-md shadow-sm focus:ring-pink-500 focus:border-pink-500"></textarea></div><div class="grid grid-cols-1 md:grid-cols-3 gap-4"><div class="space-y-2"><label for="quantity-2" class="block text-sm font-medium text-gray-700">Ilość:</label><input type="number" id="quantity-2" required="" class="w-full p-2 border border-gray-300 rounded-md shadow-sm focus:ring-pink-500 focus:border-pink-500"></div><div class="space-y-2"><label for="unitPrice-2" class="block text-sm font-medium text-gray-700">Cena jednostkowa (zł):</label><input type="number" id="unitPrice-2" step="0.01" required="" class="w-full p-2 border border-gray-300 rounded-md shadow-sm focus:ring-pink-500 focus:border-pink-500"></div><div class="space-y-2"><label for="netValue-2" class="block text-sm font-medium text-gray-700">Wartość netto (zł):</label><input type="number" id="netValue-2" step="0.01" readonly="" class="w-full p-2 border border-gray-300 rounded-md bg-gray-50 shadow-sm"></div></div><div class="grid grid-cols-1 md:grid-cols-3 gap-4"><div class="space-y-2"><label for="vatRate-2" class="block text-sm font-medium text-gray-700">Stawka VAT:</label><select id="vatRate-2" class="w-full p-2 border border-gray-300 rounded-md shadow-sm focus:ring-pink-500 focus:border-pink-500"><option value="0%">0% (nie podlega VAT)</option><option value="5%">5%</option><option value="8%">8%</option><option value="23%">23%</option></select></div><div class="space-y-2"><label for="vatAmount-2" class="block text-sm font-medium text-gray-700">Kwota VAT (zł):</label><input type="number" id="vatAmount-2" step="0.01" readonly="" class="w-full p-2 border border-gray-300 rounded-md bg-gray-50 shadow-sm"></div><div class="space-y-2"><label for="grossValue-2" class="block text-sm font-medium text-gray-700">Wartość brutto (zł):</label><input type="number" id="grossValue-2" step="0.01" readonly="" class="w-full p-2 border border-gray-300 rounded-md bg-gray-50 shadow-sm"></div></div></div></div><div class="mb-6 p-4 border border-gray-200 rounded-lg"><div class="flex justify-between items-center mb-2"><h4 class="font-medium">Pozycja #4</h4><button type="button" class="text-red-500 hover:text-red-700"><span class="text-lg">×</span> Usuń </button></div><div class="space-y-4"><div class="space-y-2"><label for="description-3" class="block text-sm font-medium text-gray-700">Opis usługi:</label><textarea id="description-3" placeholder="np. Wykonanie zajęć edukacyjnych z języka angielskiego dla dzieci" required="" class="w-full p-2 border border-gray-300 rounded-md shadow-sm focus:ring-pink-500 focus:border-pink-500"></textarea></div><div class="grid grid-cols-1 md:grid-cols-3 gap-4"><div class="space-y-2"><label for="quantity-3" class="block text-sm font-medium text-gray-700">Ilość:</label><input type="number" id="quantity-3" required="" class="w-full p-2 border border-gray-300 rounded-md shadow-sm focus:ring-pink-500 focus:border-pink-500"></div><div class="space-y-2"><label for="unitPrice-3" class="block text-sm font-medium text-gray-700">Cena jednostkowa (zł):</label><input type="number" id="unitPrice-3" step="0.01" required="" class="w-full p-2 border border-gray-300 rounded-md shadow-sm focus:ring-pink-500 focus:border-pink-500"></div><div class="space-y-2"><label for="netValue-3" class="block text-sm font-medium text-gray-700">Wartość netto (zł):</label><input type="number" id="netValue-3" step="0.01" readonly="" class="w-full p-2 border border-gray-300 rounded-md bg-gray-50 shadow-sm"></div></div><div class="grid grid-cols-1 md:grid-cols-3 gap-4"><div class="space-y-2"><label for="vatRate-3" class="block text-sm font-medium text-gray-700">Stawka VAT:</label><select id="vatRate-3" class="w-full p-2 border border-gray-300 rounded-md shadow-sm focus:ring-pink-500 focus:border-pink-500"><option value="0%">0% (nie podlega VAT)</option><option value="5%">5%</option><option value="8%">8%</option><option value="23%">23%</option></select></div><div class="space-y-2"><label for="vatAmount-3" class="block text-sm font-medium text-gray-700">Kwota VAT (zł):</label><input type="number" id="vatAmount-3" step="0.01" readonly="" class="w-full p-2 border border-gray-300 rounded-md bg-gray-50 shadow-sm"></div><div class="space-y-2"><label for="grossValue-3" class="block text-sm font-medium text-gray-700">Wartość brutto (zł):</label><input type="number" id="grossValue-3" step="0.01" readonly="" class="w-full p-2 border border-gray-300 rounded-md bg-gray-50 shadow-sm"></div></div></div></div><!-- Przycisk dodawania nowej pozycji --><button type="button" class="mt-2 px-4 py-2 bg-pink-500 text-white rounded-md hover:bg-pink-600 shadow-md transition duration-200"> + Dodaj pozycję </button><!-- Podsumowanie faktury --><div class="mt-6 p-4 bg-gray-50 rounded-lg"><h4 class="font-medium mb-2">Podsumowanie faktury</h4><div class="grid grid-cols-1 md:grid-cols-3 gap-4"><div class="space-y-2"><label class="block text-sm font-medium text-gray-700">Wartość netto (zł):</label><input type="number" step="0.01" readonly="" class="w-full p-2 border border-gray-300 rounded-md bg-gray-50 shadow-sm"></div><div class="space-y-2"><label class="block text-sm font-medium text-gray-700">Kwota VAT (zł):</label><input type="number" step="0.01" readonly="" class="w-full p-2 border border-gray-300 rounded-md bg-gray-50 shadow-sm"></div><div class="space-y-2"><label class="block text-sm font-medium text-gray-700">Wartość brutto (zł):</label><input type="number" step="0.01" readonly="" class="w-full p-2 border border-gray-300 rounded-md bg-gray-50 shadow-sm"></div></div></div></div><!-- Informacje o płatności --><div class="bg-white p-6 rounded-lg shadow-md border border-gray-200"><h3 class="text-lg font-medium text-navy-800 mb-4 border-b border-pink-500 pb-2">Informacje o płatności</h3><div class="space-y-4"><div class="grid grid-cols-1 md:grid-cols-2 gap-4"><div class="space-y-2"><label for="paymentDueDate" class="block text-sm font-medium text-gray-700">Termin płatności:</label><input type="date" id="paymentDueDate" required="" class="w-full p-2 border border-gray-300 rounded-md shadow-sm focus:ring-pink-500 focus:border-pink-500"></div><div class="space-y-2"><label for="paymentMethod" class="block text-sm font-medium text-gray-700">Sposób płatności:</label><select id="paymentMethod" required="" class="w-full p-2 border border-gray-300 rounded-md shadow-sm focus:ring-pink-500 focus:border-pink-500"><option value="Przelew bankowy">Przelew bankowy</option><option value="Gotówka">Gotówka</option><option value="Karta płatnicza">Karta płatnicza</option></select></div></div><div class="space-y-2"><label for="bankAccount" class="block text-sm font-medium text-gray-700">Numer rachunku bankowego:</label><input type="text" id="bankAccount" placeholder="np. 12 3456 7890 1234 5678 9012 3456" class="w-full p-2 border border-gray-300 rounded-md shadow-sm focus:ring-pink-500 focus:border-pink-500"></div></div></div><!-- Uwagi --><div class="bg-white p-6 rounded-lg shadow-md border border-gray-200"><h3 class="text-lg font-medium text-navy-800 mb-4 border-b border-pink-500 pb-2">Uwagi</h3><div class="space-y-2"><textarea id="notes" rows="4" class="w-full p-2 border border-gray-300 rounded-md shadow-sm focus:ring-pink-500 focus:border-pink-500"></textarea></div></div><div class="flex justify-end space-x-4 mt-6"><button type="button" class="px-4 py-2 bg-gray-600 text-white rounded-md hover:bg-gray-700 shadow-md transition duration-200"> Anuluj </button><button type="submit" class="px-4 py-2 bg-pink-500 text-white rounded-md hover:bg-pink-600 shadow-md transition duration-200"> Zapisz fakturę </button></div></form></div></div></div></div><div class="my-8"><h2 class="text-2xl font-bold text-navy-800 mb-4 border-b-2 border-pink-500 pb-2 inline-block">Lista faktur</h2><div class="overflow-x-auto rounded-lg shadow"><table class="min-w-full bg-white"><thead><tr class="bg-navy-700 text-white"><th class="py-3 px-4 text-left font-medium">Numer faktury</th><th class="py-3 px-4 text-left font-medium">Wartość</th><th class="py-3 px-4 text-left font-medium">Data wystawienia</th><th class="py-3 px-4 text-left font-medium">Akcje</th></tr></thead><tbody class="divide-y divide-gray-200"><tr><td colspan="4" class="py-4 px-4 text-center text-gray-500">Brak faktur do wyświetlenia</td></tr></tbody></table></div><!-- Confirmation Modal --><!--v-if--></div></div></div></div></div></div>
+    <script type="module" src="./Vite + Vue_files/main.js.pobrane"></script>
+  
+
+</body></html>
